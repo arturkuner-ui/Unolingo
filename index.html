@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Holzwort – Fachdeutsch Holztechnik</title>
+  <meta name="description" content="Technisches Deutsch für das Holztechnik-Studium an der TH Rosenheim: Lernpfad, Übungen, Hörsaal-Vorträge und Bild-Lektionen.">
+  <meta name="theme-color" content="#2f6b45">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌲</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@500;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#/"><span class="logo">🌲</span><span>Holzwort</span></a>
+    <div class="top-stats">
+      <a class="pill" href="#/review" title="Fällige Wiederholungen">🔁 <b id="stat-due">0</b></a>
+      <span class="pill" title="Tage-Serie">🔥 <b id="stat-streak">0</b></span>
+      <span class="pill" title="XP">⚡ <b id="stat-xp">0</b></span>
+      <a class="pill lvl" href="#/profile" title="Level">Lv <b id="stat-level">1</b></a>
+    </div>
+  </header>
+
+  <main id="view" class="container"></main>
+
+  <nav class="tabbar" aria-label="Hauptnavigation">
+    <a href="#/" data-tab="home"><span>🏠</span>Lernen</a>
+    <a href="#/review" data-tab="review"><span>🔁</span>Wiederholen</a>
+    <a href="#/words" data-tab="words"><span>📖</span>Wortschatz</a>
+    <a href="#/profile" data-tab="profile"><span>👤</span>Profil</a>
+  </nav>
+
+  <div id="sheet" class="sheet" hidden>
+    <div class="sheet-panel" role="dialog" aria-modal="true">
+      <button class="icon-btn sheet-close" aria-label="Schließen">✕</button>
+      <div class="sheet-body"></div>
+    </div>
+  </div>
+  <div id="lesson" hidden></div>
+  <div id="toast" role="status" aria-live="polite"></div>
+
+  <script src="js/core.js"></script>
+  <script src="js/data/01-grundlagen.js"></script>
+  <script src="js/data/02-technik.js"></script>
+  <script src="js/data/03-holz.js"></script>
+  <script src="js/data/04-fertigung.js"></script>
+  <script src="js/data/05-management.js"></script>
+  <script src="js/diagrams.js"></script>
+  <script src="js/speech.js"></script>
+  <script src="js/exercises.js"></script>
+  <script src="js/app.js"></script>
+  <script type="module" src="js/cloud.js"></script>
+</body>
+</html>
